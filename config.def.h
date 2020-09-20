@@ -95,7 +95,7 @@ static key keys[] = {
     {  MOD4|SHIFT,       XK_j,          move_down,         {NULL}},
     {  MOD4|SHIFT,       XK_k,          move_up,           {NULL}},
     /* swap the current window to master */
-    {  MOD4,             XK_Return,     swap_master,       {NULL}},
+    {  MOD4|SHIFT,       XK_Return,     swap_master,       {NULL}},
     /* maximize the current window */
     {  MOD4,             XK_f,          maximize,          {NULL}},
     /* minimize window to queue/pull window from queue */
@@ -135,7 +135,7 @@ static key keys[] = {
     {  MOD4|SHIFT,       XK_x,          rotate_mode,       {.i = +1}},
 
     /* spawn terminal, dmenu, w/e you want to */
-    {  MOD4|SHIFT,       XK_Return,     spawn,             {.com = termcmd}},
+    {  MOD4,             XK_Return,     spawn,             {.com = termcmd}},
     {  MOD4,             XK_r,          spawn,             {.com = menucmd}},
     /* kill current window */
     {  MOD4|SHIFT,       XK_c,          killclient,        {NULL}},
