@@ -24,13 +24,14 @@ Installation
 
 Note: If you are on Arch Linux, you can use the [AUR][aur].
 
-You need xcb and xcb-utils then, copy `config.def.h` as `config.h` and edit to
-suit your needs.  Build and install.
+Edit `config.def.h` as `config.h` and change it to suit your needs.
+The confi.def.h gets copied to config.h by make (like with dwm).
 
-    $ cp config.def.h config.h
-    $ $EDITOR config.h
+Build and install.
+
+    $ $EDITOR config.def.h
     $ make
-    # make clean install
+    # make clean && sudo make install
 
 The packages in Arch Linux needed for example would be
 `libxcb` `xcb-util` `xcb-util-wm` `xcb-util-keysyms`
