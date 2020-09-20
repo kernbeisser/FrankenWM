@@ -24,7 +24,7 @@ Installation
 
 Note: If you are on Arch Linux, you can use the [AUR][aur].
 
-Edit `config.def.h` as `config.h` and change it to suit your needs.
+Edit `config.def.h` and change it to suit your needs.
 The confi.def.h gets copied to config.h by make (like with dwm).
 
 Build and install.
